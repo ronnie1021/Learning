@@ -124,6 +124,8 @@ Data related to Users and Items satisfies the Powerlaw Distribution, also called
 > f(x) = ax^k
 Sample data that meets the long tail distribution 
 >  let **number of users has interactions with k items** be x, and **range of k items** be y
->  let **numbers of items has interactions with k users** be y, and **range of k users** be y    
+
+>  let **numbers of items has interactions with k users** be y, and **range of k users** be y 
+
 Those two are all meet the long tail distribution
 Note: More active users tend to view less popular items and new users tend to view most popular items
