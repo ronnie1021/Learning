@@ -16,16 +16,18 @@ A good recommenders system should meet the needs of those three stakeholders
 2. Fit data into model and get predictions(results)
 3. use offline metrics to evaluate results from different models
   
--pros:
+- pros:
 Experiment with differnet algorithms and models quickly without involving actual users
 Don't need support of acutal running system. Just user data is required
--cons:
+- cons:
 Can't evaluate business metrics
 offline metrics is different from business metrics (e.g. accuracy(offline) vs customer satisfation(business))
 
 ### User study
 User studay fills the gap of what offline experiment cannot provide.
 
--pros
+- pros
+
+- cons
 ### Online experiment
 
