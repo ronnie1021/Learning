@@ -42,3 +42,20 @@ User studay fills the gap of what offline experiment cannot provide by sampling 
 
 ### A/B Testing
 
+With A/B Testing , we can try different algorithms on different groups and compare different results for business metrics. 
+But A/B Testing is a relatively huge topic. There are plenty of things need to consider before getting a valid result 
+- pros
+  
+  Can fairly compare performance of diffrent algorithms on online(business) metrics (e.g. CTR)
+  
+- cons 
+  
+  How to design the entire system (make sure different A/B Testings do not interferes with each other)  
+  how to effectively segment users (how to avoid bias)
+  
+To sum up, In order to make a recommendation system online, you have to take three steps:
+1. Using offline experiment to
+2. 
+3. 
+
+
