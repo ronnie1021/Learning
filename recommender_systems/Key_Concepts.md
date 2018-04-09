@@ -11,25 +11,34 @@ A good recommenders system should meet the needs of those three stakeholders
 
 ## Experiment methods for evaluating the key metrics
 
-### Offline experiment (contains several steps):
-1. Obtain user behavoir data and 
+### Offline Experiment (contains several steps):
+1. Obtain user related data 
 2. Fit data into model and get predictions(results)
 3. use offline metrics to evaluate results from different models
   
-- pros:
+- pros
 
-Experiment with differnet algorithms and models quickly without involving actual users
-Don't need support of acutal running system. Just user data is required
-- cons:
+  Experiment with differnet algorithms and models quickly without involving actual users
+  Don't need support of acutal running system. Just user data is required
+- cons
 
-Can't evaluate business metrics
-offline metrics is different from business metrics (e.g. accuracy(offline) vs customer satisfation(business))
+  Can't evaluate business metrics
+  offline metrics is different from business metrics (e.g. accuracy(offline) vs customer satisfation(business))
 
-### User study
-User studay fills the gap of what offline experiment cannot provide.
+### User Study
+User studay fills the gap of what offline experiment cannot provide by sampling acutal users and ask them how they fell
 
 - pros
 
+  Can evaluate business metrics based on response from users
+  easier to make modifications than system acutally going live
+  
 - cons
-### Online experiment
+
+  High cost
+  Hard to conduct in a large scale and so result is not statisically sound 
+  Hard to find representative and not biased users
+### Online Experiment
+
+### A/B Testing
 
