@@ -9,6 +9,9 @@ There are three important stakeholders of recommender systems:
 
 A good recommenders system should meet the needs of those three stakeholders 
 
+
+## Metrics
+
 ## Experiment methods for evaluating the key metrics
 
 ### Offline Experiment (contains several steps):
@@ -53,9 +56,9 @@ But A/B Testing is a relatively huge topic. There are plenty of things need to c
   How to design the entire system (make sure different A/B Testings do not interferes with each other)  
   how to effectively segment users (how to avoid bias)
   
-To sum up, In order to make a recommendation system online, you have to take three steps:
-1. Using offline experiment to
-2. 
-3. 
+To sum up, In order to make a new recommendation algorithm online, you have to take three steps:
+1. Using offline experiment to prove it is better than current algorithm in terms of those offline metrics
+2. Using user study to make sure it won't affect the user's satisfaction
+3. Using A/B testing to make sure if those business metrics are better
 
 
