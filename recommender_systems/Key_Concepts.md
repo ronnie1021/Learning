@@ -32,8 +32,6 @@ In this case, we are not only interested in recommending items that user like, w
 metrics NDPM(Normalized Distance-based Performance Measure)
 use ratings to rank if explicit user ratings are available
 
-
-
 ### Coverage
 #### Item Space Coverage
 whether the systems covers the enough long tail products
@@ -41,7 +39,36 @@ To accurately mearsure the item space coverage, we need to count frequecy of eac
 In the information theroy, we can measure it by entropy or Gini index.
 
 #### User Space Coverage
-### 
+In many cases, not all users get recommendations (e.g. new users with no history and accurcay does not meet the threshold)
+
+### Cold Start
+It measures how system treats the new item added or new users
+
+### Diversity
+whether the items recommendted are different from each other.
+Can be calculated by similarity between items
+
+### Novelty
+Recommend something that user has not seen before
+
+### Serendipity
+recommend something that does not matach user's history but user likes
+
+### Confidence
+System's confidence in its predictions. System could add probability of users preference towards the item.
+There is a confidence bound added to each predicted score.
+In the light of two algorithms with same prediction accuracy, we can choose them based on how close of those confidence bounds
+towards the true value.
+### Trust
+Users' trust in the recommendation also plays important role. 
+It may be beneficial to recommend something that user already liked so as to create credibility of the system.
+
+### Adaptivity
+Systm abiltiy to adapt to changes in customer behaviors, new items coming.
+Rate by which system adapts to those changes
+
+### Scalability
+System is able to scale with the growth of the data
 
 ## Experiment methods for evaluating the key metrics
 
