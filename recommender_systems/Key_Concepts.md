@@ -10,7 +10,38 @@ There are three important stakeholders of recommender systems:
 A good recommenders system should meet the needs of those three stakeholders 
 
 
-## Metrics
+## Recommendation System Properties 
+  
+### Prediction Accuracy (offline)
+There are three categories of measuring prediction accuracy
+
+#### Measuring Ratings Prediction Accuracy
+it predicts users'rating on a specific item
+metrics for measure is MAE or RMSE
+
+#### Measuring Usage Prediction
+In some cases, we don't care about users rating on specific items. Just predict items user may be intereseted in.
+metrics for measure is Precision at N.  
+> trade off between TPR and FPR, so we choose Precision
+Use precision-recall curves or ROC curves (choose based on use case) 
+while precision-recall curve emphasizes on proportion of items get recommended that are prefered , 
+ROC curves emphasize on proportion of items not preferred but get recommended.
+
+#### Measuring rankings of Prediction
+In this case, we are not only interested in recommending items that user like, we also care about the ordering of those items
+metrics NDPM(Normalized Distance-based Performance Measure)
+use ratings to rank if explicit user ratings are available
+
+
+
+### Coverage
+#### Item Space Coverage
+whether the systems covers the enough long tail products
+To accurately mearsure the item space coverage, we need to count frequecy of each item appears in the recommendation.
+In the information theroy, we can measure it by entropy or Gini index.
+
+#### User Space Coverage
+### 
 
 ## Experiment methods for evaluating the key metrics
 
