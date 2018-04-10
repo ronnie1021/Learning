@@ -38,6 +38,13 @@ personal preference.
 > Item based is fast in terms of more Adaptivity, and fast reponse to cold start problem
 
 ## Profile(Content) Based Model
+1. Create item profile (features vector)
+2. Use user profiles (weight average of item profiles)
+- Sample: User rates 5 moveies with 1-5 star ratings. Actor A, B is one of feature in item profile
+- Actor A's movies rated 3, 5 and Actor B's movies rated 1, 2, 4
+- Normalization by subtracting user's mean rating, which is 3 in this case
+- User profile for Actor A is  (3-3 + 5-3) / 2 = 1 and for Actor B is (1-3+2-3+4-3)/3
+3. Cosine similarity (x*i)/|x||i|
 
 
 ## Latent Factor Model (using approach similar to SVD)
@@ -59,5 +66,33 @@ implicit behavior, which we don't know what users do not like.
 - Treat most popular items user has no interactions with as negative, and maintain a balanced class
 
 Compraed with Collaborative Filtering
+- LFM saves more memory space and computationally inexpensive compared with User based
+- LFM not fit for large item space and adaptivity is limited.
+- Hard to inteprete LFM results
 
-## Graph Based model
+## Graph Based model (EBay, Yelp)
+
+Every user and item are represented as nodes and user behaviors data is represented as edges.
+- How you can determine the relation between nodes
+1. Number of paths in between 
+2. Length of path in between 
+3. Number of nodes it passes in between
+
+- Nodes with Higher relations 
+1. Multiple paths
+2. Shorter length
+3. Don't pass any significant Node
+
+- Strength: Can explore indirect latent link LFM cannnot do, which improves accuracy
+- weakness: initial tranfer to graphs, scalability since it is relatively computationally expensive.
+
+## Hybird Model
+Combine algorithms such as CF, content based model. 
+
+## Community Based Recommendations
+Facebook, recommendations take on weight from social relationship among users. 
+users that are trusted will have higher weights when doing recommendations 
+
+## Deep Learning
+
+
