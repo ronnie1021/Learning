@@ -46,7 +46,16 @@ personal preference.
 - User profile for Actor A is  (3-3 + 5-3) / 2 = 1 and for Actor B is (1-3+2-3+4-3)/3
 3. Cosine similarity (x*i)/|x||i|
 
-
+- Pros: 
+  - Able to hanlde unpopular item
+  - No need data for other users
+  - Fit users' unique taste
+  - Easy to explain and earn user's credibility
+- Cons: 
+  - Find appropriate features, 
+  - Cold start for new users  
+  - Miss sharing interests among users
+  - Serendipity
 ## Latent Factor Model (using approach similar to SVD)
 Idea behind is trying to cluster users' interest through latent factor. and then recommend product
 in their clusters.
