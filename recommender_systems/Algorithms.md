@@ -37,11 +37,27 @@ personal preference.
 > Item based is based on user's past preference, which is more likely to earn credibility. 
 > Item based is fast in terms of more Adaptivity, and fast reponse to cold start problem
 
-## Latent factor Model (Similar to SVD)
+## Profile(Content) Based Model
+
+
+## Latent Factor Model (using approach similar to SVD)
 Idea behind is trying to cluster users' interest through latent factor. and then recommend product
 in their clusters.
 1. To cluster items
 2. Identify which cluster of items user more likely to be intereseted in. and quantify interests
 3. To a specific cluster, identify items in the cluster to recommend and also weight those items
 
+> SVD: R = p * q (there are missing values in R, normal SVD won't work.)
+> LFD: find p and q that minimize sum of squared errors for only values in R without missing values 
+> Initialize with SVD and use gradient descent to find p and q
+Recommendation systems have two kind of users behavior, explicit behavior (e.g ratings) and 
+implicit behavior, which we don't know what users do not like.
+> LFM performs good when explicit data is available.
+> https://www.youtube.com/watch?v=4-f77HjB_CI
 
+### How to tackle data without negative ratings using LFM 
+- Treat most popular items user has no interactions with as negative, and maintain a balanced class
+
+Compraed with Collaborative Filtering
+
+## Graph Based model
