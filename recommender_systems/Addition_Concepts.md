@@ -75,8 +75,30 @@ Several things to consider:
   - Recommend items that are similar to items user lately interacted on 
   - Two items will be more similar if time interval of interaction on them is shorted 
 - User Based Collaborative Filtering
-  - 
-  - 
+  - Shorter time interval plays more important role when calculating neighbors
+  - Use most recent behavior of user neighbors
 - Graph model based on time
 
 ## Location
+Location is critical, for example, user from same place tend to have similar behavior
+Classify items and users both into two categories: one with location, one without
+
+### How to incorporate time in Algorithms
+Three types of Data set  
+- (user, user location, item, ratings)
+
+
+LARS (Treats location as different node in Tree sturcture, use ItemCF calculate recommendation sets on node, and parent node)
+
+Find a way to linearly combine those recommendations
+
+- (user, item, item location, ratings)
+
+Calcuate normal ItemCF and use travelpenalty(which distance between item location and previous item location) 
+
+- (user, user location, item, item location, ratings)
+
+make sure user and recommended item are close
+
+## Social Network Data
+
