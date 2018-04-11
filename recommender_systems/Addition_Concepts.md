@@ -36,7 +36,7 @@ For user cold start,
 for new users, there won't be a lot of tags. To increase accuracy, we can add similar tags to users'tag
 > Calculate similarity of tags is similar to calculate item 
 
-> if two tags frequently being tage to one item, we consider it to be similar
+> if two tags frequently being taged to one item, we consider them to be similar
 
 
 ## Recommendation of tags intead of items
