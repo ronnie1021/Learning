@@ -100,5 +100,33 @@ Calcuate normal ItemCF and use travelpenalty(which distance between item locatio
 
 make sure user and recommended item are close
 
-## Social Network Data
+# Social Network Data
 
+## Recommendation based only on social network data
+It's about how to recommend feeds to users
+1. Find most familiar friends of certain user 
+2. Find friends that share the most similar interest with the user and calculate similarity between user and friends
+
+Facebook and twitter each represents different ways of recommendation their social network
+## Facebook
+Social Graph: people relationship is two way. and most people who are friends on Facebook know each other
+
+Facebook is using edge rank. Edge rank only considers the relationship of user and does not consider user's post or user's interest
+- Affinity score (only one-way)
+- Weight score (each behavior (e.g. link, create, tag) on the post will have different weight)
+- Time decay
+
+# Twitter
+Interest Graph : people relationship is based on interest and is one-way relationship 
+
+Twitter's recommendation of feeds to users based on user's friends' past behavior data. because this data is large.
+
+Twitter uses method called message queue. each user maintains a message queue. every time, the users of this user subscribe to tweet,
+
+there will be a new feed (tweets) put into user's queue
+
+
+
+> Note:We can also recommend friends based on social network data (either friends of friends or share same interests)
+
+> Link prediction
