@@ -121,11 +121,7 @@ Interest Graph : people relationship is based on interest and is one-way relatio
 
 Twitter's recommendation of feeds to users based on user's friends' past behavior data. because this data is large.
 
-Twitter uses method called message queue. each user maintains a message queue. every time, the users of this user subscribe to tweet,
-
-there will be a new feed (tweets) put into user's queue
-
-
+Twitter uses method called message queue. each user maintains a message queue. every time, the users of this user subscribe to tweet, there will be a new feed (tweets) put into user's queue
 
 > Note:We can also recommend friends based on social network data (either friends of friends or share same interests)
 
