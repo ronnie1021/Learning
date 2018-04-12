@@ -112,7 +112,7 @@ Every user and item are represented as nodes and user behaviors data is represen
 ## Hybird Model
 Combine algorithms such as CF, content based model. 
 
-## Community Based Recommendations
+## Social Network Based Recommendations
 Facebook, recommendations take on weight from social relationship among users. 
 users that are trusted will have higher weights when doing recommendations 
 
