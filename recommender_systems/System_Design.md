@@ -1,4 +1,4 @@
-#System Desgin
+# System Desgin
 
 ## Basic Component of Entire System
 1. Recommendation system
@@ -25,7 +25,7 @@ Core task of Recommendation System
 adjust weights on results from each engine
 
 ### Engine Design
-task
+Three steps
 1. Get user behavoir data and output user features
 2. Combine features with feature-item similarity table with to initial recommendation items
 3. Filter, fank, explain initial recommendation items
