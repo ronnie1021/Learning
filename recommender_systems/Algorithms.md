@@ -65,7 +65,7 @@ in their clusters.
 
 > SVD: R = p * q (there are missing values in R, normal SVD won't work.)
 
-> LFD: find p and q that minimize sum of squared errors for only values in R without missing values 
+> LFM: find p and q that minimize sum of squared errors for only values in R without missing values 
 
 > Initialize with SVD and use gradient descent to find p and q
 
@@ -73,6 +73,17 @@ Recommendation systems have two kind of users behavior, explicit behavior (e.g r
 implicit behavior, which we don't know what users do not like.
 > LFM performs good when explicit data is available.
 > https://www.youtube.com/watch?v=4-f77HjB_CI
+
+LFM improvements:
+- LFM with bias
+> r = u + bu + bi + p*q
+
+> u = global average ratings
+
+- LFM with bias considering nearest neighbors (SVD++)
+
+- TimeWeighted(SVD++）
+
 
 ### How to tackle data without negative ratings using LFM 
 - Treat most popular items user has no interactions with as negative, and maintain a balanced class
