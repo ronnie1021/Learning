@@ -15,9 +15,9 @@ This Algorithm only based on users bahavior(transaction, online log) data.
   - Basic Method: every user plays equal role in determining item similarities
   - Improved Method: IUF(Inverse User Frequence) less Frequent users play more important role
   - Normalize items similarity matrix by its maximum value will improve accuracy
-  - Explanation: Suppose there are two categories A and B, items within A has similarity of 0.6, and 0.5 within B
+  - Explanation: Suppose there are two categories A and B, items within A has similarity of 0.5, and 0.6 within B
 if users got same number items within A and B and we don't normalize it, we would get recommended items from B all the time.
-Normally, most puplar items has higher similarity within them. so normalizing it improves coverage.
+Normally, most puplar items has higher similarity within them. so normalizing it improves coverage. (normalize by max value in the category)
 2. Find k nearest item towards the item user act on
 3. Recommend items based on target user's previous behavoirs
 
